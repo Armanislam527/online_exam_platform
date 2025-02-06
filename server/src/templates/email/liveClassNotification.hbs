@@ -1,0 +1,49 @@
+{{#> base title="Live Class Scheduled"}}
+<h2>Hello {{username}},</h2>
+
+<p>A new live class has been scheduled for your course <strong>{{courseTitle}}</strong>.</p>
+
+<div class="info-box">
+    <h3>Class Details</h3>
+    <table>
+        <tr>
+            <th>Topic:</th>
+            <td>{{classTitle}}</td>
+        </tr>
+        <tr>
+            <th>Date & Time:</th>
+            <td>{{startTime}}</td>
+        </tr>
+        <tr>
+            <th>Duration:</th>
+            <td>{{duration}} minutes</td>
+        </tr>
+    </table>
+</div>
+
+<div class="warning-box">
+    <h3>Description</h3>
+    <p>{{description}}</p>
+</div>
+
+<div class="success-box">
+    <h3>How to Join</h3>
+    <p>Click the button below at the scheduled time to join the live class:</p>
+    <a href="{{meetingLink}}" class="button">Join Live Class</a>
+</div>
+
+<div class="info-box">
+    <h3>Preparation Tips</h3>
+    <ul>
+        <li>Join 5 minutes before the scheduled time</li>
+        <li>Ensure you have a stable internet connection</li>
+        <li>Test your audio and video before joining</li>
+        <li>Keep your study materials ready</li>
+        <li>Prepare your questions in advance</li>
+    </ul>
+</div>
+
+<p>We look forward to seeing you in class!</p>
+
+<p><small>Note: The class link will be active 15 minutes before the scheduled time.</small></p>
+{{/base}}

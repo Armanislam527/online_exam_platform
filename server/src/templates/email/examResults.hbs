@@ -1,0 +1,45 @@
+{{#> base title="Your Exam Results"}}
+<h2>Hello {{username}},</h2>
+
+<p>Your results for <strong>{{examTitle}}</strong> are now available.</p>
+
+<div class="success-box">
+    <h3>Score Summary</h3>
+    <table>
+        <tr>
+            <th>Total Score:</th>
+            <td>{{score}} / {{totalMarks}}</td>
+        </tr>
+        <tr>
+            <th>Percentage:</th>
+            <td>{{percentage}}%</td>
+        </tr>
+        <tr>
+            <th>Correct Answers:</th>
+            <td>{{correctAnswers}}</td>
+        </tr>
+        <tr>
+            <th>Wrong Answers:</th>
+            <td>{{wrongAnswers}}</td>
+        </tr>
+        <tr>
+            <th>Time Taken:</th>
+            <td>{{timeTaken}} minutes</td>
+        </tr>
+    </table>
+</div>
+
+<div class="info-box">
+    <p>View your detailed results, including:</p>
+    <ul>
+        <li>Question-wise analysis</li>
+        <li>Performance by category</li>
+        <li>Comparison with other students</li>
+        <li>Suggested areas for improvement</li>
+    </ul>
+</div>
+
+<a href="{{resultLink}}" class="button">View Detailed Results</a>
+
+<p>Keep up the good work and continue practicing!</p>
+{{/base}}

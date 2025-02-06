@@ -1,0 +1,56 @@
+{{#> base title="Welcome to Your New Course!"}}
+<h2>Hello {{username}},</h2>
+
+<p>Welcome to <strong>{{courseTitle}}</strong>! We're excited to have you on board.</p>
+
+<div class="success-box">
+    <h3>Course Overview</h3>
+    <table>
+        <tr>
+            <th>Course:</th>
+            <td>{{courseTitle}}</td>
+        </tr>
+        <tr>
+            <th>Duration:</th>
+            <td>{{courseDuration}}</td>
+        </tr>
+        <tr>
+            <th>Total Modules:</th>
+            <td>{{moduleCount}}</td>
+        </tr>
+    </table>
+</div>
+
+<div class="info-box">
+    <h3>Getting Started</h3>
+    <ol>
+        <li>Access your course dashboard</li>
+        <li>Review the course outline</li>
+        <li>Start with Module 1</li>
+        <li>Track your progress</li>
+        <li>Participate in discussions</li>
+    </ol>
+</div>
+
+<div class="warning-box">
+    <h3>Important Information</h3>
+    <ul>
+        <li>Live classes will be announced separately</li>
+        <li>You can track your progress in the course dashboard</li>
+        <li>Assignments and quizzes are part of the course</li>
+        <li>Support is available 24/7 through the help desk</li>
+    </ul>
+</div>
+
+<a href="{{courseLink}}" class="button">Start Learning</a>
+
+<p>We recommend:</p>
+<ul>
+    <li>Setting aside regular time for studying</li>
+    <li>Participating actively in discussions</li>
+    <li>Completing all assignments on time</li>
+    <li>Reaching out for help when needed</li>
+</ul>
+
+<p>Happy learning!</p>
+{{/base}}

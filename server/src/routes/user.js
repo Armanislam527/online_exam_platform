@@ -3,6 +3,7 @@ const router = express.Router();
 const { body } = require("express-validator");
 const { auth, authorize } = require("../middleware/auth");
 const userController = require("../controllers/userController");
+const User = require("../models/User");
 
 // Get all users (admin only)
 router.get("/", auth, authorize("admin"), userController.getAllUsers);
@@ -27,8 +28,8 @@ router.get("/analytics", auth, userController.getUserAnalytics);
 
 // Change password
 router.put("/change-password", auth, userController.changePassword);
-
+-``;
 // Delete account
 router.delete("/", auth, userController.deleteAccount);
-
 module.exports = router;
+// Exports default user ;

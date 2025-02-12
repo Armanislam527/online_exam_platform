@@ -1,3 +1,4 @@
+// import userRoutes from "./routes/user";
 require("dotenv").config();
 const express = require("express");
 const mongoose = require("mongoose");
@@ -14,6 +15,7 @@ const httpServer = createServer(app);
 // Import routes
 const authRoutes = require("./routes/auth");
 const userRoutes = require("./routes/user");
+
 const examRoutes = require("./routes/exam");
 const paymentRoutes = require("./routes/payment");
 const subscriptionRoutes = require("./routes/subscription");
